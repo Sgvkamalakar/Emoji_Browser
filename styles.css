@@ -1,0 +1,150 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.emoji-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.emoji-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  width: 200px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.emoji-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.emoji-card p {
+  margin: 5px;
+  font-size: 14px;
+}
+
+.emoji-card span {
+  font-size: 2rem;
+}
+
+.search-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-filter input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.search-filter select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .emoji-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .emoji-card {
+    width: 90%;
+  }
+}
+
+.search-filter {
+  margin-bottom: 20px;
+}
+
+.emoji-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  width: 200px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.emoji-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.emoji-card span {
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+.emoji-card p {
+  margin: 5px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.emoji-card p:first-child {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.emoji-card:not(:last-child) {
+  border-bottom: 2px solid #f5f5f5;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .search-filter select {
+    color: #fff;
+    background-color: #333;
+    border: 1px solid #666;
+  }
+}
