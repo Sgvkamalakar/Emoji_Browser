@@ -1,5 +1,7 @@
 ![image](https://github.com/Sgvkamalakar/Emoji_Browser/assets/103712713/c1b9b48c-097b-4ab8-a557-821910c2fced)
 
+Website: https://emoji-browser.netlify.app/
+
 # Emoji Browser
 
 Emoji Browser is a convenient web application that allows users to explore and browse through a vast collection of emojis. 
