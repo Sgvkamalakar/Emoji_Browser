@@ -148,3 +148,22 @@ h1 {
     border: 1px solid #666;
   }
 }
+
+.footer
+{   
+    text-align: center;
+    align-items:center;
+    /* padding:10px; */
+    /* margin-top:20px; */
+    border-radius:10px;
+    font-weight: 300;
+    color:rgb(9, 234, 234);
+    background: linear-gradient(130deg,rgb(5, 0, 137),rgb(0, 0, 74));
+}
+.footer p
+{   
+    font-size:1.1em;
+    align-items:center;
+    margin-top:20px;
+    padding:10px;
+}
